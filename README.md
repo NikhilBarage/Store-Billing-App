@@ -4,23 +4,6 @@ A smart Android-based solution designed for retail store owners to manage produc
 
 ---
 
-## 📋 Table of Contents
-- 🎯 [Overview](#overview)
-- ✨ [Features](#features)
-- 🛠️ [Technologies Used](#technologies-used)
-- 📱 [Screenshots](#screenshots)
-- 🚀 [Installation](#installation)
-- ⚙️ [Configuration](#configuration)
-- 📖 [Usage](#usage)
-- 🗄️ [Database Schema](#database-schema)
-- 🔒 [Security Features](#security-features)
-- 📁 [Project Structure](#project-structure)
-- 🤝 [Contributing](#contributing)
-- 📄 [License](#license)
-- 👨‍💻 [Credits](#credits)
-
----
-
 ## 🎯 Overview
 
 This Android app simplifies billing and inventory tracking for small to medium-sized retail stores. It features product management, order generation, user authentication, database backup, and analytics tools to streamline daily operations.
