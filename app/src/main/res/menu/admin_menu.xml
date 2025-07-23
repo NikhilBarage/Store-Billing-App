@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <item
+        android:id="@+id/sear"
+        android:title="Search"
+        android:icon="@drawable/searcha"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+    <item
+        android:id="@+id/adminadd"
+        android:title="Admin Login" />
+
+    <item
+        android:id="@+id/adminupd"
+        android:title="View Product Available" />
+
+    <item
+        android:id="@+id/admininc"
+        android:title="View Income" />
+
+    <item
+        android:id="@+id/backupId"
+        android:title="BackUp" />
+
+    <item
+        android:id="@+id/restoreId"
+        android:title="Restore" />
+
+
+</menu>

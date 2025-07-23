@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="1dp"
+    tools:context=".client_page">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBAR"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Bill App"
+        android:textSize="60sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Product From Below : "
+        android:layout_marginTop="11dp"
+        android:textSize="25sp" />
+
+    <Spinner
+        android:id="@+id/showProductstoclient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="11dp" />
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="11dp"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/orderNameTextVIEW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_weight="1"
+            android:textColor="#EF0404"
+            android:hint="Select Product" />
+
+        <EditText
+            android:id="@+id/orderPriceTextVIEW"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:textColor="#EF0404"
+            android:hint="Order Price" />
+
+        <EditText
+            android:id="@+id/orderQuantityEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Product Qnt"
+            android:layout_weight="1"
+            android:layout_marginTop="11dp"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/collectOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#800000"
+        android:layout_marginTop="11dp"
+        android:textSize="15sp"
+        android:text=" Add " />
+
+        <Button
+            android:id="@+id/newBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:backgroundTint="#e1e1e1"
+            android:layout_marginLeft="50dp"
+            android:textSize="20sp"
+            android:text=" New Customer " />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/totalPrice"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:id="@+id/invoiceTableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:stretchColumns="*" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

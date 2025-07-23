@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="1dp"
+    tools:context=".client_income">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Bill App"
+        android:textSize="60sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#60100B"
+        android:text="Enter The Date Below : "
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="19dp" />
+
+    <EditText
+        android:id="@+id/clientselectedDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColorHint="#60100B"
+        android:textColor="#420C09"
+        android:inputType="date"
+        android:maxLength="10"
+        android:hint="e.g. 30-08-2018"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/clientcalculateIncomeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="19dp"
+        android:text="Calculate Income" />
+
+    <TextView
+        android:id="@+id/clienttotalIncomeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textColor="#60100B"
+        android:layout_marginTop="15dp" />
+
+</LinearLayout>
