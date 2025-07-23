@@ -95,11 +95,17 @@ This Android app simplifies billing and inventory tracking for small to medium-s
 
 app/
 ├── src/
+
 │   └── main/java/com/example/bill/
+
 │       ├── Login.java
+
 │       ├── SignUp.java
+
 │       ├── MainActivity.java
+
 │       ├── addProducts.java
+
 │       ├── updateProducts.java
 │       ├── Order.java
 │       ├── DBHelper.java
