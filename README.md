@@ -1,22 +1,3 @@
-# Store Billing App
-
-<div align="center">
-
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
-![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)
-
-*A modern ride booking application built with Java and XML for Android platform*
-
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/cabn?style=social)](https://github.com/yourusername/cabn)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/cabn?style=social)](https://github.com/yourusername/cabn)
-[![GitHub issues](https://img.shields.io/github/issues/yourusername/cabn)](https://github.com/yourusername/cabn/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/yourusername/cabn)](https://github.com/yourusername/cabn/pulls)
-
-</div>
-
-
 # 🧾 Store Billing System App
 
 A smart Android-based solution designed for retail store owners to manage products, generate customer bills, monitor income, and perform inventory operations — all in one offline app.
@@ -67,7 +48,69 @@ This Android app simplifies billing and inventory tracking for small to medium-s
 | IDE             | Android Studio           |
 | UI              | XML                      |
 | Database        | SQLite                   |
-| Architecture    | MVC/MVP structure        |
 | Data Backup     | Manual SQLite Export     |
 
 ---
+
+🚀 Installation
+1. Clone this repository:
+
+    git clone https://github.com/yourusername/store-billing-system
+
+2. Open the project in Android Studio
+3. Connect your Android device or emulator
+4. Click Run ▶️
+
+
+⚙️ Configuration
+- Ensure you have the correct permissions in AndroidManifest.xml for storage and internet.
+- No server is required — data is stored locally using SQLite.
+- To enable backup: navigate to the DatabaseBackUp.java module.
+
+📖 Usage
+- Login/Register to access the app
+- Navigate to:
+  🛒 Products → Add/Edit/Delete items
+  🧾 Orders → Create customer bills
+  📊 Income → View client revenue summary
+
+- Use admin panel for advanced control
+
+🗄️ Database Schema
+- Main tables in SQLite:
+  Users (id, name, username, password)
+  Products (id, name, quantity, price)
+  Orders (id, client, items, total, timestamp)
+  Clients (id, name, total_income)
+
+- Defined in DBHelper.java
+
+🔒 Security Features
+  - Input validation on all forms
+  - Local-only access — no external exposure
+  - Backup/restore is manually handled to reduce external risk
+
+
+📁 Project Structure
+
+app/
+├── src/
+│   └── main/java/com/example/bill/
+│       ├── Login.java
+│       ├── SignUp.java
+│       ├── MainActivity.java
+│       ├── addProducts.java
+│       ├── updateProducts.java
+│       ├── Order.java
+│       ├── DBHelper.java
+│       └── ...
+└── res/
+    └── layout/
+        └── *.xml
+
+
+👨‍💻 Credits
+    - Developed by Nikhil Barage
+    - GitHub: @NikhilBarage
+    - Contact: nikhilbarage1@gmail.com
+
