@@ -1,3 +1,22 @@
+# Store Billing App
+
+<div align="center">
+
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)
+
+*A modern ride booking application built with Java and XML for Android platform*
+
+[![GitHub stars](https://img.shields.io/github/stars/yourusername/cabn?style=social)](https://github.com/yourusername/cabn)
+[![GitHub forks](https://img.shields.io/github/forks/yourusername/cabn?style=social)](https://github.com/yourusername/cabn)
+[![GitHub issues](https://img.shields.io/github/issues/yourusername/cabn)](https://github.com/yourusername/cabn/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/yourusername/cabn)](https://github.com/yourusername/cabn/pulls)
+
+</div>
+
+
 # 🧾 Store Billing System App
 
 A smart Android-based solution designed for retail store owners to manage products, generate customer bills, monitor income, and perform inventory operations — all in one offline app.
