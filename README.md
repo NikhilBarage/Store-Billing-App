@@ -94,6 +94,7 @@ This Android app simplifies billing and inventory tracking for small to medium-s
 📁 Project Structure
 
 app/
+
 ├── src/
 
 │   └── main/java/com/example/bill/
@@ -107,11 +108,17 @@ app/
 │       ├── addProducts.java
 
 │       ├── updateProducts.java
+
 │       ├── Order.java
+
 │       ├── DBHelper.java
+
 │       └── ...
+
 └── res/
+
     └── layout/
+    
         └── *.xml
 
 
