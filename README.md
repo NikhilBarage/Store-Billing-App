@@ -107,6 +107,9 @@ app/
 
 👨‍💻 Credits
     - Developed by Nikhil Barage
+    
     - GitHub: @NikhilBarage
+    
     - Contact: nikhilbarage1@gmail.com
+    
 
