@@ -38,7 +38,7 @@ This Android app simplifies billing and inventory tracking for small to medium-s
 🚀 Installation
 1. Clone this repository:
 
-    git clone https://github.com/NikhilBarage/store-billing-system
+    git clone https://github.com/NikhilBarage/Store-Billing-App
 
 2. Open the project in Android Studio
 3. Connect your Android device or emulator
