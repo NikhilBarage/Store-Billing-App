@@ -35,7 +35,7 @@ This Android app simplifies billing and inventory tracking for small to medium-s
 
 ---
 
-🚀 Installation
+## 🚀 Installation
 1. Clone this repository:
 
     git clone https://github.com/NikhilBarage/Store-Billing-App
@@ -45,12 +45,12 @@ This Android app simplifies billing and inventory tracking for small to medium-s
 4. Click Run ▶️
 
 
-⚙️ Configuration
+## ⚙️ Configuration
 - Ensure you have the correct permissions in AndroidManifest.xml for storage and internet.
 - No server is required — data is stored locally using SQLite.
 - To enable backup: navigate to the DatabaseBackUp.java module.
 
-📖 Usage
+## 📖 Usage
 - Login/Register to access the app
 - Navigate to:
   🛒 Products → Add/Edit/Delete items
@@ -59,7 +59,7 @@ This Android app simplifies billing and inventory tracking for small to medium-s
 
 - Use admin panel for advanced control
 
-🗄️ Database Schema
+## 🗄️ Database Schema
 - Main tables in SQLite:
   Users (id, name, username, password)
   Products (id, name, quantity, price)
@@ -68,7 +68,7 @@ This Android app simplifies billing and inventory tracking for small to medium-s
 
 - Defined in DBHelper.java
 
-🔒 Security Features
+## 🔒 Security Features
   - Input validation on all forms
   - Local-only access — no external exposure
   - Backup/restore is manually handled to reduce external risk
