@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Store Billing</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header>
+
+    <h2>Smart Store Billing</h2>
+
+    <div class="menu">
+
+        <button class="menu-btn">☰</button>
+
+        <div class="menu-content">
+            <a href="/login">Admin Login</a>
+            <a href="/">New Bill</a>
+        </div>
+
+    </div>
+
+</header>
+
+
+<div class="container">
+
+    <h2>New Bill</h2>
+
+    <form>
+
+        <label>Product</label>
+
+        <select name="product_id" id="product" required>
+
+            <option value="">Select Product</option>
+
+            {% for product in products %}
+
+                <option value="{{ product[0] }}">
+                    {{ product[1] }}
+                </option>
+
+            {% endfor %}
+
+        </select>
+        <p style="color: red;" id="price"> </p>
+        <p style="color: red;" id="stock"> </p>
+
+
+        <label>Quantity</label>
+        <input type="number" min="1" id="quantity" required>
+
+        <button type="button" id="addProductBtn">Add Product</button>
+
+    </form>
+
+    <br>
+
+    <table>
+
+        <thead>
+
+        <tr>
+            <th>Product</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+
+        </thead>
+
+        <tbody id="billTable">
+
+        </tbody>
+
+    </table>
+
+    <h3 id="grandTotal">Grand Total : ₹0</h3>
+
+    <button type="button" id="createBillBtn">Create Bill</button>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
